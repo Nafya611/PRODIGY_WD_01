@@ -255,7 +255,7 @@ span{
 }
 .about-content .heading{
     text-align: center;
-    font-size: 6rem;
+    font-size: 4.5rem;
 }
 
 .about-content h2{
@@ -387,7 +387,7 @@ span{
     align-items: center;
     gap:1.5rem;
     color:#fff;
-    transition: all 0.5s ease-in-out;
+    transition:0.5s ease-in-out;
 
 
 }
@@ -399,17 +399,70 @@ span{
 }
 .review-item h2{
     font-size: 2rem;
+    text-align: center;
 }
 .review-item p{
     font-size: 1.5rem;
     line-height: 1.2;
+    text-align: center;
 }
 .rating i{
     color:gold;
     font-size:2rem;
+    text-align: center;
 }
 
-
+ 
 
 
 /* Footer Section */
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background:var(--snd-bg-color);
+    text-align: center;
+    
+
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+
+.footer .social a {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 25px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+
+    
+}
+.footer .social a:hover{
+    transform: scale(1.2) translateY(10px);
+    background: var(--main-color);
+    color: #131331;
+    box-shadow:0 0 25px var(--main-color) ;
+}
+
+.foooter .copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-color);
+     
+
+}
+
+/* Scroll Bar Design */
