@@ -150,13 +150,13 @@ span{
 .home-img::before{
     content: 'FITNESS';
     position: absolute;
-    top: 50%;
-    left: 60%;
+    top: 35%;
+    left: 50%;
     transform: translateX(-50%);
-    font-size: 13.5rem;
-    line-height: 5rem;
+    font-size: 18rem;
+    line-height: 4.5rem;
     color: var(--text-color);
-    opacity: 0.1;
+    opacity: 0.08;
     z-index: -1;
 }
 .home-content p{
@@ -350,6 +350,7 @@ span{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 .review .heading{
     margin-bottom: 5rem;
@@ -357,9 +358,10 @@ span{
 }
 
 .review-box img{
-    width: 15rem; 
+    width: 12rem; 
     border:3px solid var(--main-color);
     border-radius: 50%;
+    
     
 
 }
@@ -374,18 +376,18 @@ span{
     gap: 3rem;
 }
 .review-item{
-    min-height: 450px;
-    min-width: 350px;
+    min-height: 400px;
+    min-width: 280px;
     background:var(--snd-bg-color);
     border:3px solid rgba(238,238,238,0.3);
     border-radius: 2rem;
     margin:0 2rem;
-    padding:30px 60px;
+    padding:30px 40px;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:1.5rem;
+    gap:1rem;
     color:#fff;
     transition:0.5s ease-in-out;
 
@@ -466,3 +468,131 @@ span{
 }
 
 /* Scroll Bar Design */
+::-webkit-scrollbar{
+    width:15px;
+
+}
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 10px;
+    width: 50px;;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:1304px){
+    html{
+        font-size: 55%;
+    }
+
+}
+@media screen and  (max-width:991px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        right:100%;
+        width: 255px;
+        min-height: 100vh;
+        display:flex;
+        flex-direction:column;
+        background: var(--bg-color);
+        transition: all 0.5s ease;    
+    }
+    .navbar a{
+        display:block;
+        padding:17px;
+        font-size:22px;
+    }
+    .navbar:active{
+        right:0;
+     
+    }
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% ;
+    }
+    .services{
+        padding:7rem;
+
+    }
+    .about-content{
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 5rem;
+
+    }
+    .review .wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .review-item{
+        text-align: center;
+    }
+    .footer {
+        padding:40px 0;
+    }
+
+}
+@media screen and (max-width:786px){
+    .home{
+        flex-direction: column;
+        
+    }
+    .home-content h3{
+        font-size:4.5rem;
+        margin-top: 1.5rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+        margin-top: 1.5rem;
+
+    }
+    .home-content{
+        order:2;
+    }
+    .home-img img{
+        width:70vw;
+        margin-top:4rem;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-img img{
+        width: 70vw;
+        margin-top: 4rem;
+
+    }
+    .about-content{
+        text-align: center;
+
+    }
+    .about-content h2{
+        text-align: center;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media screen and (max-width:617px) {
+    .home-img img{
+        width: 80vw;
+        margin-top: 8rem;
+    }
+    .about-img img{
+        width: 80w;
+        margin-top: 4rem;
+    }
+    
+}
+@media screen and (max-width:450px){
+    html{
+        font-size:50%;
+    }
+}
